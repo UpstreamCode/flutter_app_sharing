@@ -1,6 +1,6 @@
 name: share_app
 description: A new Flutter plugin that enables sharing the APK on Android.
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
