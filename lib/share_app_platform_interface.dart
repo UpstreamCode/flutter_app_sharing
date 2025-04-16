@@ -23,7 +23,25 @@ abstract class ShareAppPlatform extends PlatformInterface {
     _instance = instance;
   }
 
+  /// Share the APK file of the app with the given package name.
+  ///
+  /// [packageName] is the package name of the app whose APK file will be shared.
+  /// [apkFileName] is the name of the APK file to be shared.
+  ///
+  /// Returns true if the APK file was shared successfully, false otherwise.
+  ///
   Future<bool> shareAPK(String packageName, {String apkFileName = ''}) {
-    throw UnimplementedError('share() has not been implemented.');
+    throw UnimplementedError('shareAPK() has not been implemented.');
+  }
+
+  /// Share the app URL with the given title and URL. It gets the icon from the app.
+  ///
+  /// [title] is the title of the app to be shared.
+  /// [url] is the URL of the app to be shared.
+  ///
+  /// Returns true if the app URL was shared successfully, false otherwise.
+  ///
+  Future<bool> shareAppUrl(String title, String url) {
+    throw UnimplementedError('shareAppUrl() has not been implemented.');
   }
 }
