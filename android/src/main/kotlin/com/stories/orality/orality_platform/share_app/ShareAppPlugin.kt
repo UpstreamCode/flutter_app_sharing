@@ -120,7 +120,8 @@ class ShareAppPlugin: FlutterPlugin, MethodCallHandler {
   private fun getAppApk(): Uri? {
     val packageManager: PackageManager = context.getPackageManager()
     val packageInfo: PackageInfo = packageManager.getPackageInfo(packageName!!, 0)
-    val original = File(packageInfo.applicationInfo.publicSourceDir)
+    val sourceDir = packageInfo.applicationInfo?.publicSourceDir ?: return null
+    val original = File(sourceDir)
     if (apkFileName.isNullOrEmpty()) {
       return getUriFromFile(original)
     }
