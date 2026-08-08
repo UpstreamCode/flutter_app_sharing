@@ -42,6 +42,7 @@ android {
 
     defaultConfig {
         minSdkVersion 16
+        targetSdkVersion 36
     }
     namespace "com.stories.orality.orality_platform.share_app"
 }
