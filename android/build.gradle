@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 100
+    compileSdkVersion 36
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -42,7 +42,6 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 36
     }
     namespace "com.stories.orality.orality_platform.share_app"
 }
